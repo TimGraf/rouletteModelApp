@@ -1,0 +1,70 @@
+body {
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  font-family: "Times New Roman";
+  font-size: 30px;
+}
+
+.container {
+  margin: auto;
+}
+
+.row {
+  width: 400px;
+  text-align: center;
+  background-color: #006600;
+}
+
+.green {
+  color: #ffffff;
+  background-color: #006600;
+}
+
+.black {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.red {
+  color: #ffffff;
+  background-color: #b80000;
+}
+
+.numbers {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 100px;
+  height: 50px;
+}
+
+.oval {
+  width: 80px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 5px;
+  line-height: 40px;
+}
+
+.hover1 {
+  color: #ffffff;
+  background-color: #0000ff;
+}
+
+.hover2 {
+  color: #ffffff;
+  background-color: #0066cc;
+}
+
+.hover3 {
+  color: #ffffff;
+  background-color: #99ccff;
+}
+
