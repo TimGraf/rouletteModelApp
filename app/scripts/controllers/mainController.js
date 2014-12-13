@@ -117,7 +117,7 @@ angular.module('rouletteModelApp')
         color: 'black'
       }];
 
-    $scope.getColorForNumber = function(number) {
+    $scope.getOvalColorForNumber = function(number) {
       var color = '';
 
       $scope.wheelNumbers.forEach(function(wheelNumber) {
@@ -130,7 +130,7 @@ angular.module('rouletteModelApp')
       return color;
     };
 
-    $scope.getColorFromNumberAndClick = function(number, clicked) {
+    $scope.getHighlightColor = function(number, clicked) {
       var clickNeighbors = getNeighbors(clicked),
           color;
 
@@ -151,7 +151,7 @@ angular.module('rouletteModelApp')
           color = 'hover3';
           break;
         default:
-          color = $scope.getColorForNumber(number);
+          color = 'green';
       }
 
       return color;

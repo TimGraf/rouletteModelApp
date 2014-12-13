@@ -5,7 +5,7 @@ angular.module('rouletteModelApp')
     return {
       restrict: 'E',
       link: function($scope, element, attributes) {
-        var colorClass = $scope.$parent.getColorForNumber(attributes.value);
+        var colorClass = $scope.$parent.getOvalColorForNumber(attributes.value);
 
         element.find('.oval').addClass(colorClass);
 
@@ -14,9 +14,13 @@ angular.module('rouletteModelApp')
         });
 
         $scope.$on('numberClicked', function(event, clicked) {
-          element.find('.oval').removeClass(colorClass);
-          colorClass = $scope.$parent.getColorFromNumberAndClick(attributes.value, clicked);
-          element.find('.oval').addClass(colorClass);
+          var bgColorClass = $scope.$parent.getHighlightColor(attributes.value, clicked);
+
+          element.find('.numbers').removeClass('hover1');
+          element.find('.numbers').removeClass('hover2');
+          element.find('.numbers').removeClass('hover3');
+          element.find('.numbers').removeClass('green');
+          element.find('.numbers').addClass(bgColorClass);
         });
       },
       scope: {
