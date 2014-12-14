@@ -122,16 +122,6 @@ angular.module('rouletteModelApp')
       return row + (row + (row + (col + 1)));
     };
 
-    $scope.borderClassForRowCol = function(row, col) {
-      var borderClass = '';
-
-      if (row === 12) {
-        borderClass += ' border-bottom';
-      }
-
-      return borderClass;
-    };
-
     $scope.getOvalColorForNumber = function(number) {
       var color = '';
 
