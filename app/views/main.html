@@ -1,16 +1,15 @@
 <div ng-controller="mainController">
-  <div class="row"><number value="0"></number><number value="00"></number></div>
-  <div class="row"><number value="1"></number><number value="2"></number><number value="3"></number></div>
-  <div class="row"><number value="4"></number><number value="5"></number><number value="6"></number></div>
-  <div class="row"><number value="7"></number><number value="8"></number><number value="9"></number></div>
-  <div class="row"><number value="10"></number><number value="11"></number><number value="12"></number></div>
-  <div class="row"><number value="13"></number><number value="14"></number><number value="15"></number></div>
-  <div class="row"><number value="16"></number><number value="17"></number><number value="18"></number></div>
-  <div class="row"><number value="19"></number><number value="20"></number><number value="21"></number></div>
-  <div class="row"><number value="22"></number><number value="23"></number><number value="24"></number></div>
-  <div class="row"><number value="25"></number><number value="26"></number><number value="27"></number></div>
-  <div class="row"><number value="28"></number><number value="29"></number><number value="30"></number></div>
-  <div class="row"><number value="31"></number><number value="32"></number><number value="33"></number></div>
-  <div class="row"><number value="34"></number><number value="35"></number><number value="36"></number></div>
+  <div class="table-row">
+    <div class="table-cel-top border-right">
+      <number value="0"></number>
+    </div>
+    <div class="table-cel-top">
+      <number value="00"></number>
+    </div>
+  </div>
+  <div class="table-row" ng-class="{'border-bottom': $last}" ng-repeat="row in tableRows">
+    <div class="table-cel" ng-class="{'border-right': !$first && !$last, 'border-left': !$first && !$last}" ng-repeat="col in tableCols">
+      <number value="{{numberForRowCol(row, col)}}"></number>
+    </div>
+  </div>
 </div>
-

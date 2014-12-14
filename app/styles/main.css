@@ -3,74 +3,91 @@ body {
   -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
   -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
   font-family: "Times New Roman";
-  font-size: 30px;
+  font-size: xx-large;
 }
 
 .container {
   margin: auto;
 }
 
-.row {
-  width: 360px;
+.table-row {
+  width: 10em;
   text-align: center;
   background-color: #006600;
+  border-top: solid 0.05em #ffffff;
+  border-left: solid 0.05em #ffffff;
+  border-right: solid 0.05em #ffffff;
+}
+
+.table-cel {
+  display: inline-block;
+  padding: 0.1em;
+  width: 3.31em;
+}
+
+.table-cel-top {
+  display: inline-block;
+  padding: 0.1em;
+  width: 4.84em;
+  margin-right: -0.2em;
 }
 
 .green {
-  color: #ffffff;
   background-color: #006600;
 }
 
 .black {
-  color: #ffffff;
   background-color: #000000;
 }
 
 .red {
-  color: #ffffff;
   background-color: #b80000;
+}
+
+.white-bg {
+  background-color: #ffffff;
 }
 
 .numbers {
   display: inline-block;
   text-align: center;
-  line-height: 50px;
-  width: 100px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
 }
 
 .oval {
-  width: 80px;
-  height: 40px;
+  color: #ffffff;
+  width: 90%;
+  height: 90%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   margin: auto;
-  margin-top: 5px;
-  line-height: 40px;
 }
 
 .hover1 {
-  color: #ffffff;
   background-color: #0000ff;
 }
 
 .hover2 {
-  color: #ffffff;
   background-color: #0066cc;
 }
 
 .hover3 {
-  color: #ffffff;
   background-color: #99ccff;
 }
 
-.desc {
-  font-size: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.border-bottom {
+  border-bottom: solid 0.05em #ffffff;
 }
 
+.border-left {
+  border-left: solid 0.05em #ffffff;
+}
+
+.border-right {
+  border-right: solid 0.05em #ffffff;
+}

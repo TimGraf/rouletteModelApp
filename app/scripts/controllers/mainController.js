@@ -1,6 +1,7 @@
 angular.module('rouletteModelApp')
   .controller('mainController', ['$scope', function($scope) {
-
+    $scope.tableRows = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    $scope.tableCols = [0, 1, 2];
     $scope.wheelNumbers = [{
         number: '0',
         color: 'green'
@@ -116,6 +117,20 @@ angular.module('rouletteModelApp')
         number: '2',
         color: 'black'
       }];
+
+    $scope.numberForRowCol = function(row, col) {
+      return row + (row + (row + (col + 1)));
+    };
+
+    $scope.borderClassForRowCol = function(row, col) {
+      var borderClass = '';
+
+      if (row === 12) {
+        borderClass += ' border-bottom';
+      }
+
+      return borderClass;
+    };
 
     $scope.getOvalColorForNumber = function(number) {
       var color = '';

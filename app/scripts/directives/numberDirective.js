@@ -16,16 +16,17 @@ angular.module('rouletteModelApp')
         $scope.$on('numberClicked', function(event, clicked) {
           var bgColorClass = $scope.$parent.getHighlightColor(attributes.value, clicked);
 
-          element.find('.numbers').removeClass('hover1');
-          element.find('.numbers').removeClass('hover2');
-          element.find('.numbers').removeClass('hover3');
-          element.find('.numbers').removeClass('green');
-          element.find('.numbers').addClass(bgColorClass);
+          element.parent().removeClass('hover1');
+          element.parent().removeClass('hover2');
+          element.parent().removeClass('hover3');
+          element.parent().removeClass('green');
+          element.parent().addClass(bgColorClass);
         });
       },
       scope: {
         numberValue: '@value'
       },
+      replace: true,
       templateUrl: 'views/number.html'
     };
   });
