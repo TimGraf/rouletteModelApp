@@ -7,8 +7,8 @@
       <number value="00"></number>
     </div>
   </div>
-  <div class="table-row" ng-class="{'border-bottom': $last}" ng-repeat="row in tableRows">
-    <div class="table-cel" ng-class="{'border-right': !$first && !$last, 'border-left': !$first && !$last}" ng-repeat="col in tableCols">
+  <div class="table-row" ng-repeat="row in tableRows">
+    <div class="table-cel" ng-class="{'mar-right-1': !$first && !$last, 'mar-left-1': !$first && !$last}" ng-repeat="col in tableCols">
       <number value="{{numberForRowCol(row, col)}}"></number>
     </div>
   </div>

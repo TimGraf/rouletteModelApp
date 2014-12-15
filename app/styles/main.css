@@ -10,31 +10,25 @@ body {
   font-size: xx-large;
 }
 
-.container {
-  margin: auto;
-}
-
 .table-row {
   width: 10em;
   text-align: center;
   background-color: #ffffff;
-  border-top: solid 0.05em #ffffff;
-  border-left: solid 0.05em #ffffff;
-  border-right: solid 0.05em #ffffff;
+  padding: 0.05em;
 }
 
 .table-cel {
   background-color: #006600;
   display: inline-block;
   padding: 0.1em;
-  width: 3.3em;
+  width: 3.2em;
 }
 
 .table-cel-top {
   background-color: #006600;
   display: inline-block;
   padding: 0.1em;
-  width: 4.82em;
+  width: 4.77em;
 }
 
 .green {
@@ -81,14 +75,10 @@ body {
   background-color: #99ccff;
 }
 
-.border-bottom {
-  border-bottom: solid 0.05em #ffffff;
+.mar-left-1 {
+  margin-left: 0.1em;
 }
 
-.border-left {
-  border-left: solid 0.05em #ffffff;
-}
-
-.border-right {
-  border-right: solid 0.05em #ffffff;
+.mar-right-1 {
+  margin-right: 0.1em;
 }

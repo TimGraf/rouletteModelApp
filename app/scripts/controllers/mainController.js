@@ -171,7 +171,7 @@ angular.module('rouletteModelApp')
           indexMinusTwo,
           indexPlusOne,
           indexPlusTwo,
-          index = getIndexForValue(number);
+          index = getIndexForNumber(number);
 
       indexMinusOne = (index - 1 < 0) ? ($scope.wheelNumbers.length + (index - 1)) : index - 1;
       indexMinusTwo = (index - 2 < 0) ? ($scope.wheelNumbers.length + (index - 2)) : index - 2;
@@ -187,7 +187,7 @@ angular.module('rouletteModelApp')
       ]
     }
 
-    function getIndexForValue(number) {
+    function getIndexForNumber(number) {
       var numberIndex = -1;
 
       $scope.wheelNumbers.forEach(function(wheelNumber, index, array) {
